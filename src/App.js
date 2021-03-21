@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import MyComponent from "./MyComponent";
 import Counter, { kukukaka } from "./Counter";
+import Say from "./Say";
 
 // const App = () => {
 //   return <MyComponent name="랄라라" />;
@@ -23,6 +24,7 @@ function App() {
         좋아요와 구독 알림설정까지
       </MyComponent>
       <Counter />
+      <Say />
     </div>
   );
 }
