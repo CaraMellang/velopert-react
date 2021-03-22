@@ -3,6 +3,7 @@ import "./App.css";
 import MyComponent from "./MyComponent";
 import Counter, { kukukaka } from "./Counter";
 import Say from "./Say";
+import EventPractice from "./EventPractice";
 
 // const App = () => {
 //   return <MyComponent name="랄라라" />;
@@ -25,6 +26,7 @@ function App() {
       </MyComponent>
       <Counter />
       <Say />
+      <EventPractice />
     </div>
   );
 }
