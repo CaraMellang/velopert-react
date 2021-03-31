@@ -1,17 +1,17 @@
-import React from "react";
+import React, { Component, useRef } from "react";
 import "./App.css";
 import MyComponent from "./MyComponent";
 import Counter, { kukukaka } from "./Counter";
 import Say from "./Say";
 import EventPractice from "./EventPractice";
-
-// const App = () => {
-//   return <MyComponent name="랄라라" />;
-// };
+import ValidationSample from "./ValidationSample";
+import ScrollBox from "./ScrollBox";
 
 function App() {
+  //함수형
   const name = "리액트";
   console.log(kukukaka.kukukiki);
+  const wow = useRef();
   return (
     <div>
       <div className="reacta">{name}</div>
@@ -27,8 +27,24 @@ function App() {
       <Counter />
       <Say />
       <EventPractice />
+      <ValidationSample />
+      <ScrollBox ref={wow} />
+      <button onClick={() => wow.current.scrollToBottom()}>맨밑으로</button>
     </div>
   );
 }
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+//         <button onClick={() => this.scrollBox.scrollToBottom()}>
+//           맨밑으로
+//         </button>
+//       </div>
+//     );
+//   }
+// }
 
 export default App;
