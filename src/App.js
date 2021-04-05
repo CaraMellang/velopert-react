@@ -6,6 +6,7 @@ import Say from "./Say";
 import EventPractice from "./EventPractice";
 import ValidationSample from "./ValidationSample";
 import ScrollBox from "./ScrollBox";
+import IterationSample from "./IterationSample";
 
 function App() {
   //함수형
@@ -30,6 +31,7 @@ function App() {
       <ValidationSample />
       <ScrollBox ref={wow} />
       <button onClick={() => wow.current.scrollToBottom()}>맨밑으로</button>
+      <IterationSample />
     </div>
   );
 }
